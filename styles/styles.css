@@ -2,9 +2,67 @@ body{
     background-color: #777676;
 }
 
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
 .Welcome{
     background-color: #1D52A1;
+    height: 40px;
+    width: 600px;
+    margin: auto;
     color: #fff;
     text-align: center;
     font-family: sans-serif;
+    margin-top: 58px;
+}
+
+.container{
+    background-color: aqua;
+    height: 200px;
+    width: 650px;
+    margin: auto;
+}
+.values{
+    text-align: center;
+    color: #000;
+}
+
+p{
+    text-align: center;
+    color: #000;
 }
