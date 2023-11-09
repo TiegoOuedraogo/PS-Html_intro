@@ -1,22 +1,21 @@
 body {
-    height: 100vh; /* 100% of the viewport height */
-    overflow-y: scroll; /* Allow vertical scrolling */
     margin: 0; /* Remove default body margin */
     padding: 0; /* Remove default body padding */
   }
 
-ul, li {
+ul,li {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    background-color: red;
 }
 ul {
+    
     list-style-type: none;
     margin: 1px;
     padding: 0;
     height: 40px;
     overflow: hidden;
-    background-color: #1D52A1;
+    background-color: #1D52A1; /* high prioeity because of the !important */
     position: fixed;
     top: 0;
     width: 100%;
@@ -57,6 +56,16 @@ li a:hover:not(.active) {
     margin-top: 58px;
     position: relative; /* Add this to create space for the fixed navigation */
     z-index: 99; /* Ensure it's below the navigation bar */
+}
+
+.anchor{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #f3d196;
+    padding: 5px;
+    width: 150px;
+    margin: auto;
 }
 
 .login-form {
@@ -107,12 +116,10 @@ p{
     background-color: #1D52A1;
     width: 100%;
     align-items: center;
-    position: fixed;    
     left: 0;
     bottom: 0;
     padding: 20px; 
     text-align: center;
-    z-index: 100;
 }
 .main-container{
     display: block;
